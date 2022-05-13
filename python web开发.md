@@ -442,7 +442,7 @@ css,专门用来“美化”标签。
 
 ## 3.2 CSS应用方式
 
-## 1.在标签上
+### 1.在标签上
 
 ```html
 <img scr="..." style="hight:100px" />
@@ -452,10 +452,111 @@ css,专门用来“美化”标签。
 
 
 
-2.在head标签中写style标签
+### 2.在head标签中写style标签(*)
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <style>
+        .c1{
+            color:red
+        }
+    </style>
+</head>
+<body>
+<h1 class='c1'>用户注册</h1>
+<h1 class='c1'>用户注册</h1>
+<h1 class='c1'>用户注册</h1>
+
+</body>
+</html>
 ```
 
 
 
+### 3.写到文件中(*)
+
+```css
+.cl{
+    height:100px;
+    
+}
+.c2{
+    color:red;
+}
+```
+
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link rel='stylesheet' href="common.css"/>
+</head>
+<body>
+<h1 class='c1'>用户注册</h1>
+<h1 class='c1'>用户注册</h1>
+<h1 class='c2'>用户注册</h1>
+<h1 class='c1'>用户注册</h1>
+<h1 class='c2'>用户注册</h1>
+
+
+</body>
+</html>
+```
+
+
+
+
+
+### **案例：在flask中的引用**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <style>
+        .c1{
+        color:red;
+        }
+        .c2{
+        height:50px;
+        }
+    </style>
+</head>
+<body>
+<h1 class="c1">用户注册</h1>
+<form method="get" action="/do/reg">
+    <div class="c2">
+  用户名：<input type="text" name="uu"/>
+    </div>
+    <div class="c2">
+  密码：<input type="password" name="pp"/>
+    </div>
+  <input type="button" value="button按钮">
+  <input type="submit" value="submit按钮">
+</form>
+</body>
+</html>
+    
+```
+
+
+
+
+
+### 问题：用flask框架开发不方便
+
+- 每次都需要重启
+- 规定有些文件必须放在特定的文件夹
+- 新创建一个页面
+  - 函数
+  - HTML文件
