@@ -549,14 +549,63 @@ css,专门用来“美化”标签。
     
 ```
 
+## 引用css文件
+
+```html
+<link rel="stylesheet" href="../static/commons.css">
+```
 
 
 
 
-### 问题：用flask框架开发不方便
+
+## 问题：用flask框架开发不方便
 
 - 每次都需要重启
 - 规定有些文件必须放在特定的文件夹
 - 新创建一个页面
   - 函数
   - HTML文件
+
+有没有一种方式，可以让我们快速编写前端的代码并查看效果，最后再将页面集中到flask中
+
+pycharm为我们提供了一种便捷的前端开发工具。
+
+![image-20220516211346528](C:\Users\RUWU\AppData\Roaming\Typora\typora-user-images\image-20220516211346528.png)
+
+
+
+## 3.3 CSS的选择器
+
+- id选择器（id只能有一个）
+
+  ```html
+  #c1{
+  
+  }
+  <div id="c1"></div>
+  ```
+
+  
+
+- 类选择器（用的最多）
+
+  ```html
+  .c1{
+  
+  }
+  <div class="c1"></div>
+  ```
+
+  
+
+- 标签选择器（太绝对）
+
+  ```html
+  div{
+  
+  }
+  <div>xxx</div>
+  ```
+
+- 属性选择器
