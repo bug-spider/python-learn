@@ -609,3 +609,83 @@ pycharm为我们提供了一种便捷的前端开发工具。
   ```
 
 - 属性选择器
+
+  ```html
+  input[type='text']{
+              border:1px solid red;
+          }
+  .v1[xx="456"]{
+  	color:gold;
+   }
+  
+  <input type="text">
+  <input type="password">
+  
+  <div class="v1" xx="123">s</div>
+  <div class="v1" xx="456">f</div>
+  <div class="v1" xx="999">h</div>
+  ```
+
+- 后代选择器	
+
+```html
+.yy > a{
+            color:pink;
+        }
+```
+
+```html
+<div class="yy">
+    <a>百度</a>
+    <div>
+        <a>谷歌</a>
+    </div>
+    <ul>
+        <li>北京</li>
+        <li>上海</li>
+        <li>广东</li>
+    </ul>
+</div>
+```
+
+
+
+关于选择器
+
+```html
+多：类选择器、标签选择器、后代选择器
+少：属性选择器、ID选择器
+```
+
+关于多个样式&覆盖的问题
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .c1{
+      color:red;
+      border:1px solid red;
+    }
+    .c2{
+        font-size:28px;
+        color:green;
+    }
+  </style>
+</head>
+<body>
+  <div class="c1 c2">中国联通</div>
+</body>
+</html>
+```
+
+
+
+补充：下面的不要覆盖我。
+
+```html
+```
+
