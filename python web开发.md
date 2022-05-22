@@ -549,7 +549,7 @@ css,专门用来“美化”标签。
     
 ```
 
-## 引用css文件
+### 引用css文件
 
 ```html
 <link rel="stylesheet" href="../static/commons.css">
@@ -559,7 +559,7 @@ css,专门用来“美化”标签。
 
 
 
-## 问题：用flask框架开发不方便
+### 问题：用flask框架开发不方便
 
 - 每次都需要重启
 - 规定有些文件必须放在特定的文件夹
@@ -687,5 +687,153 @@ pycharm为我们提供了一种便捷的前端开发工具。
 补充：下面的不要覆盖我。
 
 ```html
+<style>
+    .c1{
+      color:red !important;
+      border:1px solid red;
+    }
+    .c2{
+        font-size:28px;
+        color:green;
+    }
+  </style>
 ```
 
+
+
+## 3.4 样式
+
+### 1.高度和宽度
+
+```html
+<style>
+    .c1{
+    height:300px;
+    width:500px;
+    }
+  </style>
+```
+
+- 宽度，支持百分比；高度不支持。
+- 行内标签：默认无效
+- 块级标签：默认有效（霸道，右侧区域空白，也不给你占用）
+
+
+
+### 2.块级和行内标签
+
+- 块级
+- 行内
+- css样式：标签->`display:inline->block`
+
+
+
+示例：行内&块级特性
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .c1{
+        display:inline-block;
+        height:100px;
+        width:300px;
+        border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+<div class="c1">中国</div>
+<div class="c1">联通</div>
+
+</body>
+</html>
+```
+
+注意：块级+块级&行内
+
+
+
+### 3.字体设置
+
+- 颜色
+- 大小
+- 加粗
+- 字体格式
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .c1{
+            color:red;
+            font-size:19px;
+            font-weight:400;
+            font-family: Microsoft Yahei;
+        }
+    </style>
+</head>
+<body>
+  <div class="c1">中国联通</div>
+    <div>中国移动</div>
+</body>
+</html>
+```
+
+
+
+### 4.文字对其方式
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .c1{
+            color:red;
+            font-size:19px;
+            font-weight:400;
+            font-family: Microsoft Yahei;
+            border:1px solid red;
+            text-align:center; /*水平方向居中*/
+            line-height:59px; /*垂直方向居中*/
+        }
+    </style>
+</head>
+<body>
+  <div class="c1">中国联通</div>
+    <div>中国移动</div>
+</body>
+
+```
+
+
+
+### 5.浮动
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <span>左边</span>
+    <span style="float: right">右边</span>
+</div>
+
+</body>
+</html>
+```
+
+div默认块级标签（霸道），如果浮动起来
