@@ -836,4 +836,156 @@ pycharm为我们提供了一种便捷的前端开发工具。
 </html>
 ```
 
-div默认块级标签（霸道），如果浮动起来
+div默认块级标签（霸道），如果浮动起来，就不一样了
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .c1{
+            float:left;
+            width:280px;
+            height:170px;
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="c1"></div>
+    <div class="c1"></div>
+    <div class="c1"></div>
+    <div class="c1"></div>
+    <div class="c1"></div>
+
+</div>
+
+</body>
+</html>
+```
+
+
+
+如果你让标签浮动起来之后，就会脱离文档流。
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .c1{
+            float:left;
+            width:280px;
+            height:170px;
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+<div style="background-color:blue">
+    <div class="c1"></div>
+    <div class="c1"></div>
+    <div class="c1"></div>
+    <div class="c1"></div>
+    <div class="c1"></div>
+    <div style="clear:both;"></div>
+
+</div>
+
+</body>
+
+```
+
+
+
+### 6.内边距
+
+内边距，我自己的内部设置一点距离。
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .outer{
+            border: 1px solid red;
+            height:400px;
+            width:200px;
+            padding-top:20px;
+            padding-left:20px;
+            padding-right:20px;
+            padding-bottom:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div style="background-color:gold">
+            听妈妈的话
+        </div>
+        <div>小朋友，你是否有很多问号</div>
+    </div>
+
+</body>
+
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .outer{
+            border: 1px solid red;
+            height:400px;
+            width:200px;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div style="background-color:gold">
+            听妈妈的话
+        </div>
+        <div>小朋友，你是否有很多问号</div>
+    </div>
+
+</body>
+
+```
+
+### 7.外边距
+
+外边距：我与别人加点距离。
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div style="height:200px;background-color:blue;"></div>
+    <div style="background-color:red;height:100px;margin-top:100px"></div>
+</body>
+</html>
+```
+
+
+
+###案例：小米商城
+
+```html
+```
+
