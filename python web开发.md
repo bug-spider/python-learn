@@ -984,8 +984,58 @@ div默认块级标签（霸道），如果浮动起来，就不一样了
 
 
 
-###案例：小米商城
+### ###案例：小米商城
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+        body{
+            margin:0;
+        }
+    .header{
+
+      background-color:black;
+
+    }
+    .header .menu{
+        float:left;
+        color:white;
+        height:38px;
+        line-height:38px;
+    }
+    .header .account{
+        float:right;
+        color:white;
+        height:38px;
+        line-height:38px;
+    }
+    .container{
+        width:1226px;
+        margin:0 auto;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+        <div class="container">
+          <div class="menu">
+              <a>小米商城</a>
+              <a>MIUI</a>
+              <a>云服务</a>
+              <a>有品</a>
+              <a>小爱开放平台</a>
+          </div>
+          <div class="account">右边</div>
+          <div style="clear:both"></div>
+        </div>
+  </div>
+
+</body>
+
 ```
 
