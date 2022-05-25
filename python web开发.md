@@ -984,7 +984,7 @@ div默认块级标签（霸道），如果浮动起来，就不一样了
 
 
 
-### ###案例：小米商城
+### 案例：小米商城
 
 ```html
 <!DOCTYPE html>
@@ -1039,3 +1039,53 @@ div默认块级标签（霸道），如果浮动起来，就不一样了
 
 ```
 
+
+
+### 总结
+
+- body标签，默认有一个边距，造成页面四边都有白色间隙，如何去除呢？
+
+```html
+body{
+	margin:0;
+}
+```
+
+- 内容居中
+
+  - 文本居中
+
+    ```html
+    <div style="width;200px;text-align:center;">段瑾祎</div>
+    ```
+
+    
+
+  - 区域居中，自己有宽度+`margin-left:auto;margin-right:auto`
+
+    ```html
+    .container{
+    	width:980px;
+    	margin:0 auto;
+    
+    }
+    
+    <div class="container">
+        段瑾祎
+    </div>
+    ```
+
+    
+
+- 父亲没有高度或没有宽度，被孩子支撑起来。
+- 如果存在浮动，一定记得加入
+
+![image-20220525201830638](C:\Users\RUWU\AppData\Roaming\Typora\typora-user-images\image-20220525201830638.png)
+
+- 如果想用别人的样式
+
+  ![image-20220525202025187](C:\Users\RUWU\AppData\Roaming\Typora\typora-user-images\image-20220525202025187.png)
+
+- 关于布局不知道如何下手（划分区域）
+
+![image-20220525202406040](C:\Users\RUWU\AppData\Roaming\Typora\typora-user-images\image-20220525202406040.png)
