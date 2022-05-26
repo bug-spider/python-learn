@@ -1089,3 +1089,47 @@ body{
 - 关于布局不知道如何下手（划分区域）
 
 ![image-20220525202406040](C:\Users\RUWU\AppData\Roaming\Typora\typora-user-images\image-20220525202406040.png)
+
+## 3.5 CSS案例
+
+### 1.内容回顾
+
+- html标签
+
+  ```html
+  固定格式，记住标签长什么样子，例如：
+  h/div/span/a/img/ul/li/table/input/form
+  ```
+
+- css样式
+
+  - 引用css：标签、头部、文件
+
+    ```html
+    .xx{
+    	...
+    }
+    
+    <div class="xx"></div>
+    ```
+
+  - css样式
+
+    ```html
+    高度/宽度/块级or行内or块级行内/浮动/文字/文字对其方式/内边距/外边距
+    关于边距：
+    	-body
+    	-区域居中
+    ```
+
+  - 页面布局
+
+    ```html
+    根据你看到的页面把他们划分成很多小区域，再去填充样式
+    ```
+
+    
+
+    ### 2.案例：二级菜单
+
+    
