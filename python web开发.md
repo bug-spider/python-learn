@@ -1130,6 +1130,66 @@ body{
 
     
 
-    ### 2.案例：二级菜单
 
-    
+### 2.案例：二级菜单
+
+![image-20220530220103511](C:\Users\RUWU\AppData\Roaming\Typora\typora-user-images\image-20220530220103511.png)
+
+#### 2.1 划分区域
+
+![image-20220530220149835](C:\Users\RUWU\AppData\Roaming\Typora\typora-user-images\image-20220530220149835.png)
+
+
+
+#### 2.2 搭建骨架
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .sub-header{
+            height:100px;
+            background:gray;
+        }
+        .container{
+            width:1128px;
+            margin:0 auto;
+            
+        }
+        .sub-header .logo{
+            width:234px;
+            height:100px;
+            float:left;
+        }
+        .sub-header .menu-list{
+            float:left;
+            height:100px;
+        }
+
+        .sub-header .search{
+            float:right;
+            height:100px;
+        }
+    </style>
+</head>
+<body>
+  <div class="sub-header">
+      <div class="container">
+          <div class="logo">1</div>
+          <div class="menu-list">2</div>
+          <div class="search">3</div>
+          <div style="clear:both"></div>
+      </div>
+  </div>
+
+</body>
+</html>
+```
+
+![image-20220530222611261](C:\Users\RUWU\AppData\Roaming\Typora\typora-user-images\image-20220530222611261.png)
